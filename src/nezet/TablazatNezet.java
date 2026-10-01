@@ -10,15 +10,15 @@ public class TablazatNezet {
     public TablazatNezet(Filmek modell) {
         this.modell = modell;
     }
-
-
-    public void megjelenit() {
-        
+    public void fej(){
         System.out.printf("%-25s %-25s %-8s %-8s %-12s%n",
             "Rendező", "Cím", "Év", "Pont", "Korhatáros");
 
         System.out.println("----------------------------------------------------------------------------------");
-    
+    }
+
+    public void megjelenit() {
+        
         for (Film film : modell.getFilmek()) {
         System.out.printf("%-25s %-25s %-8d %-8.1f %-12s%n",
                 film.getRendezo(),
