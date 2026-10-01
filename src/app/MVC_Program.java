@@ -2,6 +2,7 @@ package app;
 
 import nezet.KonzolNezet;
 import modell.Filmek;
+import nezet.CSVNezet;
 import nezet.HTMLNezet;
 import nezet.StatisztikaNezet;
 import nezet.TablazatNezet;
@@ -16,6 +17,8 @@ public class MVC_Program {
         HTMLNezet html = new HTMLNezet(modell);
         html.fajlbaIr();
         new StatisztikaNezet(modell).megjelenit();
+        CSVNezet csv = new CSVNezet(modell);
+        csv.fajlbaIr();
     }
     
 }
