@@ -53,10 +53,15 @@ public class StatisztikaNezet {
         System.out.println("Nem korhatáros filmek:    " + (darab - korhataros) + " db");
         System.out.println();
     }
+    
+    private void lablec(){
+        System.out.println("======================================");
+    }
 
     public void megjelenit() {
         fej();
         tartalom();
-        System.out.println("======================================");
+        lablec();
+        
     }
 }
